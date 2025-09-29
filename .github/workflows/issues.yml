@@ -1,0 +1,29 @@
+name: Create branch, PR, Ticket, Rollback, Patch
+
+on:
+  issues:
+    types: [opened, reopened, edited]
+
+concurrency:
+  group: issues
+  cancel-in-progress: true
+
+permissions:
+  write-all
+
+jobs:
+
+  opened:
+    if: ${{ github.event.action == 'opened' }}
+    uses: dhillon-shawn/Local-Uipath-CICD/.github/workflows/issue-opened.yml@main
+    secrets: inherit
+
+  edited:
+    if: ${{ github.event.action == 'edited' }}
+    uses: dhillon-shawn/Local-Uipath-CICD/.github/workflows/issue-edited.yml@main
+    secrets: inherit
+
+  re-opened:
+    if: ${{ github.event.action == 'reopened' }}
+    uses: dhillon-shawn/Local-Uipath-CICD/.github/workflows/issue-reopened.yml@main
+    secrets: inherit

@@ -1,0 +1,155 @@
+name: "Release - Process"
+description: "Request a new release"
+labels: ["release","process"]
+body:
+  - type: input
+    id: user
+    attributes:
+      label: Assignee email
+      placeholder: "email@noreply.com"
+  # ─────────────── Details ───────────────
+  - type: markdown
+    attributes:
+      value: |
+        ## Details
+        _Dates_
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: input
+    id: end_date
+    attributes:
+      label: End date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Effort/Project
+      options:
+        - Defect Resolution
+        - Executive Sponsor Projects
+        - Maintenance and Operation
+        - Legistlative Mandate
+        - User Request
+        - Test Environment
+    validations:
+      required: true
+
+  # ─────────────── Rationale ───────────────
+  - type: markdown
+    attributes:
+      value: |
+        ## Rationale
+        _Why, how, and risks_
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      placeholder: "Why this"
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_plan
+    attributes:
+      label: Implementation plan
+      placeholder: "High-level steps"
+    validations:
+      required: true
+
+  - type: textarea
+    id: test_plan
+    attributes:
+      label: Test plan
+      placeholder: "Testing strategy"
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk
+      placeholder: "Top risks"
+    validations:
+      required: true
+
+  # ─────────────── Audience & Contacts ───────────────
+  - type: markdown
+    attributes:
+      value: |
+        ## Audience & Contacts
+        _Who is impacted and how they were told._
+
+  - type: input
+    id: impacted_groups
+    attributes:
+      label: Impacted groups
+      placeholder: "Group name(s)"
+    validations:
+      required: true
+
+  - type: input
+    id: impacted_users_emails
+    attributes:
+      label: Impacted users (emails)
+      placeholder: "email@noreply.com"
+    validations:
+      required: true
+
+  - type: input
+    id: last_notified_when
+    attributes:
+      label: When were impacted users last notified?
+      placeholder: "MM/DD/YY"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: last_notified_how
+    attributes:
+      label: How were impacted users last notified?
+      options:
+        - Meeting
+        - Teams message
+        - Email
+        - Call
+        - In Person
+    validations:
+      required: true
+
+  # ─────────────── Backup & Confirmations ───────────────
+  - type: markdown
+    attributes:
+      value: |
+        ## Backup & Confirmations
+        _Point of contact and quick flags._
+
+  - type: input
+    id: backup_contact
+    attributes:
+      label: Backup contact (email)
+      placeholder: "email@noreply.com"
+
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Confirmations
+      description: Please check any that apply.
+      options:
+        - label: Impacts the public.
+          required: false
+        - label: Involves CDT.
+          required: false
+        - label: New app (ESD needs to know).
+          required: false
