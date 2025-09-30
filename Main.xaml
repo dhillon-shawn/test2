@@ -90,6 +90,6 @@
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
     <ui:GetRobotAsset TimeoutMS="{x:Null}" Value="{x:Null}" AssetName="mo" CacheStrategy="None" DisplayName="Get Asset" FolderPath="folding" sap:VirtualizedContainerService.HintSize="450,176.5" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[asset1 + &quot;BWEH&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;fg&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;yf&#xD;&#xA;t6&#xD;&#xA;&#xD;&#xA;i&#xD;&#xA;t&#xD;&#xA;hjk&#xD;&#xA;klj&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[asset1 + &quot;BWEH&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;fg&#xD;&#xA;&#xD;&#xA;t&#xD;&#xA;yf&#xD;&#xA;t6&#xD;&#xA;&#xD;&#xA;i&#xD;&#xA;t&#xD;&#xA;hjk&#xD;&#xA;klj&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&quot;]" />
   </Sequence>
 </Activity>
