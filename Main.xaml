@@ -92,6 +92,6 @@
     </ui:GetRobotAsset>
     <ui:GetRobotAsset TimeoutMS="{x:Null}" Value="{x:Null}" AssetName="mo" CacheStrategy="None" DisplayName="Get Asset" FolderPath="folding" sap:VirtualizedContainerService.HintSize="450,176.5" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2" />
     <ui:GetRobotAsset TimeoutMS="{x:Null}" Value="{x:Null}" AssetName="moes" CacheStrategy="None" DisplayName="Get Asset" FolderPath="foldings" sap:VirtualizedContainerService.HintSize="450,176.5" sap2010:WorkflowViewState.IdRef="GetRobotAsset_3" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[asset1 + &quot;e\n\nd\ns\nt\nfg\nth\nyf\nt6\nfree\nic\nt\nhjkh\nklj\n\n&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;rrr&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;iffhj&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,167" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[asset1 + &quot;e\n\nd\ns\nt\nfg\nth\nyf\nt6\nfree\nic\nt\nhjkh\nklj\n\n&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;rrr&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;iffhj&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;k&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&quot;]" />
   </Sequence>
 </Activity>
